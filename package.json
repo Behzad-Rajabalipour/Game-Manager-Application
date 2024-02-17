@@ -1,0 +1,39 @@
+{
+  "name": "content-manager",
+  "version": "1.0.0",
+  "description": "W.I.P",
+  "main": "src/server/src/server.ts",
+  "scripts": {
+    "start:client": "cd src/client && npm start",
+    "start:server": "cd src/server && npm start",
+    "start:docker": "docker-compose up --build",
+    "start": "concurrently \"npm run start:client\" \"npm run start:server\"",
+    "install:client": "cd src/client && npm install",
+    "install:server": "cd src/server && npm install",
+    "install:global": "npm run install:client && npm run install:server",
+    "build:client": "cd src/client && npm run build",
+    "build:server": "cd src/server && npm run build",
+    "build": "npm run build:client && npm run build:server",
+    "prepare": "husky install .husky"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hershk17/content-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hershk17/content-manager/issues"
+  },
+  "homepage": "https://github.com/hershk17/content-manager/issues#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "husky": "^8.0.1",
+    "lint-staged": "^15.1.0"
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --write"
+    ]
+  }
+}

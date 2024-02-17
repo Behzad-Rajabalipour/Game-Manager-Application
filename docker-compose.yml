@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  nginx:
+    container_name: nginx
+    image: hershk17/cm-nginx:latest
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: nginx
+    ports:
+      - 80:80
+    depends_on:
+      - client
+      - server
+
+  client:
+    container_name: client
+    image: hershk17/cm-client:latest
+    build:
+      dockerfile: Dockerfile
+      context: src/client
+    restart: always
+
+  server:
+    container_name: server
+    image: hershk17/cm-server:latest
+    build:
+      dockerfile: Dockerfile
+      context: src/server
+    restart: always

@@ -108,7 +108,8 @@ To run this project locally, you need to have the following installed:
   - View the search results and click on a game to see its details
 
 ## Project Structure
-
+\`\`\`
+game-manager/
 ├── .dockerignore
 ├── .gitignore
 ├── .prettierignore
@@ -119,70 +120,14 @@ To run this project locally, you need to have the following installed:
 ├── package.json
 ├── .github/
 │   └── workflows/
-│       ├── codeql.yml
-│       └── workflow.yml
 ├── .husky/
-│   └── pre-commit
 ├── nginx/
-│   ├── Dockerfile
-│   └── default.conf
 ├── scripts/
-│   └── create-docker-compose-aws.sh
 ├── src/
 │   ├── client/
-│   │   ├── .dockerignore
-│   │   ├── .gitignore
-│   │   ├── Dockerfile
-│   │   ├── index.html
-│   │   ├── package-lock.json
-│   │   ├── package.json
-│   │   ├── postcss.config.cjs
-│   │   ├── tsconfig.json
-│   │   ├── tsconfig.node.json
-│   │   ├── vite.config.ts
-│   │   ├── config/
-│   │   │   ├── example.env.development
-│   │   │   └── example.env.production
-│   │   └── nginx/
-│   │       └── default.conf
 │   └── server/
-│       ├── config/
-│       │   ├── example.env.development
-│       │   └── example.env.production
-│       ├── security/
-│       │   └── req.cnf
-│       └── src/
-│           ├── server.ts
-│           ├── __tests__/
-│           │   └── server.test.ts
-│           ├── middleware/
-│           │   └── requireAuth.ts
-│           ├── models/
-│           │   └── user.ts
-│           ├── routes/
-│           │   ├── index.ts
-│           │   └── auth/
-│           │       ├── facebook.ts
-│           │       ├── google.ts
-│           │       ├── index.ts
-│           │       ├── local.ts
-│           │       └── steam.ts
-│           │   └── games/
-│           │       └── index.ts
-│           │   └── library/
-│           │       └── index.ts
-│           └── services/
-│               ├── passport/
-│               │   ├── facebookStrategy.ts
-│               │   ├── googleStrategy.ts
-│               │   ├── index.ts
-│               │   ├── jwtStrategy.ts
-│               │   ├── localStrategy.ts
-│               │   └── steamStrategy.ts
-│               └── utils/
-│                   ├── cookie.ts
-│                   └── validators.ts
-
+└── ...
+\`\`\`
 ## Contributing
 
 Contributions are welcome! Please follow these steps to contribute:

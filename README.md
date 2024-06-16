@@ -108,26 +108,8 @@ To run this project locally, you need to have the following installed:
   - View the search results and click on a game to see its details
 
 ## Project Structure
-\`\`\`
-game-manager/
-├── .dockerignore
-├── .gitignore
-├── .prettierignore
-├── .prettierrc.yaml
-├── README.md
-├── docker-compose.yml
-├── package-lock.json
-├── package.json
-├── .github/
-│   └── workflows/
-├── .husky/
-├── nginx/
-├── scripts/
-├── src/
-│   ├── client/
-│   └── server/
-└── ...
-\`\`\`
+![image](https://github.com/Behzad-Rajabalipour/game-manager/assets/115672803/b644b033-a38e-452f-9aa9-251dcb3d67ea)
+
 ## Contributing
 
 Contributions are welcome! Please follow these steps to contribute:

@@ -109,8 +109,6 @@ To run this project locally, you need to have the following installed:
 
 ## Project Structure
 
-\`\`\`
-.
 ├── .dockerignore
 ├── .gitignore
 ├── .prettierignore
@@ -184,7 +182,6 @@ To run this project locally, you need to have the following installed:
 │               └── utils/
 │                   ├── cookie.ts
 │                   └── validators.ts
-\`\`\`
 
 ## Contributing
 

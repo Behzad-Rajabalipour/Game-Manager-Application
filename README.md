@@ -1,7 +1,7 @@
 
-# Game Application
+# Game Manager Application
 
-Game Application is a comprehensive application designed to manage and organize video games. It allows users to add, edit, delete, and search for games in their collection, providing detailed information about each game.
+Game Manager Application is a comprehensive application designed to manage and organize video games. It allows users to add, edit, delete, and search for games in their collection, providing detailed information about each game.
 
 ## Features
 
